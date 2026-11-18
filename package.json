@@ -1,0 +1,21 @@
+{
+  "name": "shopify-order-automation",
+  "version": "1.0.0",
+  "description": "Webhook service that reacts to new Shopify orders: verifies the request, logs the order, emails the customer, and alerts the team.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "simulate": "node scripts/simulate-order.js"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.5.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "nodemailer": "^6.9.15"
+  }
+}
