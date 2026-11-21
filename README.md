@@ -63,7 +63,7 @@ mutation {
 
 Note: order payloads include customer details, which Shopify treats as protected customer data. It works on your own dev store, but check Shopify's docs on protected customer data before using it in a public app.
 
-## Project layout
+##Full Project layout
 
 ```
 src/verify.js   HMAC signature verification
